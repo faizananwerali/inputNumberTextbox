@@ -1,5 +1,6 @@
 /*
     Plugin Name: jQuery plugin inputNumericTextBox
+    Version: 1.0
     Plugin URI: https://github.com/faizananwerali/inputNumberTextbox
     Description: jQuery plugin inputNumericTextBox is a simple input number validate and proper input textbox
     Author: Faizan Anwer Ali Rupani
@@ -49,14 +50,10 @@
         onInitializationStart: function () {
         },
         onInitializationComplete: function () {
-        },
+        }
     };
     if (!$.fn[pluginName]) {
         $.fn[pluginName] = function (options) {
-
-            // get the arguments
-            var args = $.makeArray(arguments),
-                after = args.slice(1);
 
             return this.each(function () {
 
@@ -72,7 +69,7 @@
                     setMinDecimalAttrValue(this, settings.minDecimalDigits);
                 } else {
                     // create the plugin
-                    var plugin = new inputNumericTextBox(this, options);
+                    var plugin = new InputNumericTextBox(this, options);
 
                     // Store the plugin instance on the element
                     $.data(this, pluginName, plugin);
@@ -90,7 +87,7 @@
         };
     }
 
-    function inputNumericTextBox(element, options) {
+    function InputNumericTextBox(element, options) {
         var $this = this;
         var settings = {};
         var previous_value_set = false;
@@ -189,7 +186,7 @@
 
             triggerKeydownAction: function (evt, element) {
                 var theEvent = evt || window.event;
-                if (theEvent.charCode == 0 && theEvent.keyCode == 0) {
+                if (theEvent.charCode === 0 && theEvent.keyCode === 0) {
                     if (theEvent.preventDefault) {
                         theEvent.preventDefault();
                     }
@@ -213,7 +210,7 @@
 
                 var regex;
                 var theEvent = evt || window.event;
-                if (theEvent.charCode == 0 && theEvent.keyCode == 0) {
+                if (theEvent.charCode === 0 && theEvent.keyCode === 0) {
                     if (theEvent.preventDefault) {
                         theEvent.preventDefault();
                     }
@@ -407,7 +404,7 @@
             triggerMinDecimalDigits: function (evt, element, number) {
                 settings.minDecimalDigits = parseFloat(number) || settings.maxValue;
                 setMinDecimalAttrValue(element, settings.minDecimalDigits);
-            },
+            }
         });
 
         this.init();
