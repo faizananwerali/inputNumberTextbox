@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a643d91-8df1-4f32-a465-6659ef4b455f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_config.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -199,7 +200,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518000456001</updated>
       <workItem from="1518000457656" duration="2218000" />
-      <workItem from="1518002794702" duration="4450000" />
+      <workItem from="1518002794702" duration="4502000" />
     </task>
     <task id="LOCAL-00001" summary="Version Added">
       <created>1518005434316</created>
@@ -247,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6668000" />
+    <option name="totallyTimeSpent" value="6720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
